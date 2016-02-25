@@ -1,7 +1,7 @@
 # Presentations
 Speaker presentations from events.
 
-* [Feb 2016](http://sddevops.org/events/222986448/) - Operating the open Core [PDF](https://sddevops.github.io/presentations/operating-the-open-core/ooc.pdf) by Ryan Uber, HashiCorp
+* [Feb 2016](http://sddevops.org/events/222986448/) - Operating the open Core ([PDF](https://sddevops.github.io/presentations/operating-the-open-core/ooc.pdf)) by Ryan Uber, HashiCorp
 
 ## 2015
 
