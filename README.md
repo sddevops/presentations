@@ -1,6 +1,8 @@
 # Presentations
 Speaker presentations from events.
 
+* February 2016 - <a href="https://github.com/sddevops/presentations/blob/master/operating-the-open-core/ooc.pdf">Operating the Open Core</a> by Ryan Uber, HashiCorp
+
 # How to Add a Presentation
 
 ## Add via github
