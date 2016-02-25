@@ -1,7 +1,12 @@
 # Presentations
 Speaker presentations from events.
 
-* February 2016 - <a href="https://github.com/sddevops/presentations/blob/gh-pages/operating-the-open-core/ooc.pdf">Operating the Open Core</a> by Ryan Uber, HashiCorp
+* [Feb 2016](http://sddevops.org/events/222986448/) - Operating the open Core [PDF](https://sddevops.github.io/presentations/operating-the-open-core/ooc.pdf) by Ryan Uber, HashiCorp
+
+## 2015
+
+* [Dec 2015](http://www.meetup.com/sddevops/events/222986448/) - Lightning Talks
+** [Kubernetes Overview](http://sddevops.github.io/presentations/kubernetes-overview/) by Chris Hiestand, Oakleon
 
 # How to Add a Presentation
 
