@@ -5,7 +5,7 @@ Speaker presentations from events.
 
 ## 2015
 
-* [Dec 2015](http://sddevops.org/events/222986448/) - Lightning Talks
+* [Dec 2015](http://sddevops.org/events/226894408/) - Lightning Talks
   - [Kubernetes Overview](http://sddevops.github.io/presentations/kubernetes-overview/) by Chris Hiestand, Oakleon
   - Provisioning Servers Made Easy with Stacki by Greg Bruno
   - 10 Tips for Tech Efficiency by Rick Chatham
