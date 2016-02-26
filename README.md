@@ -21,6 +21,30 @@ Speaker presentations from events.
 * [Feb 2015](http://sddevops.org/events/219998142/) - Mitchell’s Devops Journey by Rajwinder Singh Makkar / Sony Koithara, Mitchell
 * [Jan 2015](http://sddevops.org/events/218965694/) - [Overview of OneHealth's DevOps Journey](https://speakerdeck.com/svanzoest/stay-c-dot-a-l-dot-m-s-dot-a-local-companys-journey-into-devops) by Sander van Zoest, OneHealth
 
+## 2014
+
+* [Nov 2014](http://sddevops.org/events/200372472/) - Build Artifact Management Roundtable
+* [Oct 2014](http://sddevops.org/events/190056522/) - Continous Delivery Roundtable
+* [Sep 2014](http://sddevops.org/events/189958362/) - Software-defined Networking Roundtable
+* [Aug 2014](http://sddevops.org/events/189958462/) - Continuous Security Testing Roundtable
+* [Jul 2014](http://sddevops.org/events/189392812/) - Operating system–level virtualization Roundtable
+* [Jun 2014](http://sddevops.org/events/176848172/) - Open Source Monitoring Roundtable
+* [Apr 2014](http://sddevops.org/events/167781072/) - [Managing OSX Client Machines with Munki](https://speakerdeck.com/drpebcak/munki-presentation) by Taylor Price, OneHealth
+* [Mar 2014](http://sddevops.org/events/161941882/) - [DevOps at MP3.com - early 2000's](http://www.slideshare.net/techopsguru/devops-naughtiesstyle) by Andrew Hollingsworth, Techopsguru
+* [Feb 2014](http://sddevops.org/events/159635112/) - Chef Cookbook Development Pipeline by Sander van Zoest, OneHealth
+* [Jan 2014](http://sddevops.org/events/151911762/) - Chef for Intuit's AWS Journey by Suman Kanuganti, Intuit
+
+## 2013
+
+* [Oct 2013](http://sddevops.org/events/135785272/) - Optimizing Your AWS Costs With CloudCheckr
+* [Sep 2013](http://sddevops.org/events/135036012/) - [Graphite - Scalable Realtime Graphing](https://speakerdeck.com/svanzoest/graphite-scalable-real-time-graphing) by Sander van Zoest, OneHealth
+* [Jul 2013](http://sddevops.org/events/117878412/) - AWS OpsWorks by Simone Brunozzi, Amazon Web Services
+* [Jun 2013](http://sddevops.org/events/110022532/) - OSSEC Intrusion Detection System by Elan Kaplan
+* [May 2013](http://sddevops.org/events/109922542/) - Rocks: Towards Software Defined Infrastructure by Mason Katz, Rocks Clusters project
+* [Apr 2013](http://sddevops.org/events/109753162/) - Automating the Hadoop Stack with Chef by Chris Hemphill, Shopzilla
+* [Mar 2013](http://sddevops.org/events/103407322/) - Eucalyptus Private Cloud by Graziano Obertelli, Dmitrii Zagorodnov, Kyo Lee, Eucalyptus Systems
+* [Jan 2013](http://sddevops.org/events/98681392/) - Vagrant by Sander van Zoest, OneHealth
+
 # How to Add a Presentation
 
 ## Add via github
