@@ -37,7 +37,7 @@ Speaker presentations from events.
 
 ## 2013
 
-* [Oct 2013](http://sddevops.org/events/135785272/) - Optimizing Your AWS Costs With CloudCheckr
+* [Oct 2013](http://sddevops.org/events/135785272/) - Optimizing Your AWS Costs With CloudCheckr by Aaron Newman, Aaron Klein, CloudCheckr
 * [Sep 2013](http://sddevops.org/events/135036012/) - [Graphite - Scalable Realtime Graphing](https://speakerdeck.com/sddevops/graphite-scalable-real-time-graphing) by Sander van Zoest, OneHealth
 * [Jul 2013](http://sddevops.org/events/117878412/) - AWS OpsWorks by Simone Brunozzi, Amazon Web Services
 * [Jun 2013](http://sddevops.org/events/110022532/) - [OSSEC Intrusion Detection System](https://speakerdeck.com/sddevops/ossec-host-based-intrusion-detection-and-prevention-system) by Elan Kaplan
