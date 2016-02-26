@@ -1,4 +1,5 @@
 # Presentations
+
 Speaker presentations from events.
 
 * [Feb 2016](http://sddevops.org/events/222986448/) - Operating the open Core ([PDF](https://sddevops.github.io/presentations/operating-the-open-core/ooc.pdf)) by Ryan Uber, HashiCorp
@@ -37,13 +38,17 @@ Speaker presentations from events.
 ## 2013
 
 * [Oct 2013](http://sddevops.org/events/135785272/) - Optimizing Your AWS Costs With CloudCheckr
-* [Sep 2013](http://sddevops.org/events/135036012/) - [Graphite - Scalable Realtime Graphing](https://speakerdeck.com/svanzoest/graphite-scalable-real-time-graphing) by Sander van Zoest, OneHealth
+* [Sep 2013](http://sddevops.org/events/135036012/) - [Graphite - Scalable Realtime Graphing](https://speakerdeck.com/sddevops/graphite-scalable-real-time-graphing) by Sander van Zoest, OneHealth
 * [Jul 2013](http://sddevops.org/events/117878412/) - AWS OpsWorks by Simone Brunozzi, Amazon Web Services
-* [Jun 2013](http://sddevops.org/events/110022532/) - OSSEC Intrusion Detection System by Elan Kaplan
+* [Jun 2013](http://sddevops.org/events/110022532/) - [OSSEC Intrusion Detection System](https://speakerdeck.com/sddevops/ossec-host-based-intrusion-detection-and-prevention-system) by Elan Kaplan
 * [May 2013](http://sddevops.org/events/109922542/) - Rocks: Towards Software Defined Infrastructure by Mason Katz, Rocks Clusters project
-* [Apr 2013](http://sddevops.org/events/109753162/) - Automating the Hadoop Stack with Chef by Chris Hemphill, Shopzilla
+* [Apr 2013](http://sddevops.org/events/109753162/) - [Automating the Hadoop Stack with Chef](https://speakerdeck.com/sddevops/automating-the-hadoop-stack-with-chef) by Chris Hemphill, Shopzilla
 * [Mar 2013](http://sddevops.org/events/103407322/) - Eucalyptus Private Cloud by Graziano Obertelli, Dmitrii Zagorodnov, Kyo Lee, Eucalyptus Systems
 * [Jan 2013](http://sddevops.org/events/98681392/) - Vagrant by Sander van Zoest, OneHealth
+
+## 2012
+
+* [Nov 2012](http://sddevops.org/events/87569692/) - [Opscode Chef](https://speakerdeck.com/sddevops/opscode-chef), Sander van Zoest, OneHealth
 
 # How to Add a Presentation
 
