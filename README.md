@@ -18,7 +18,7 @@ Speaker presentations from events.
   - Druid by Meg Sharkey
   - [InfluxDB](http://www.slideshare.net/relling/influx-db-talk20150415) by Richard Elling
 * [Mar 2015](http://sddevops.org/events/220573039/) - A DevOps State of Mind with Red Hat OpenShift ([PDF](https://sddevops.github.io/presentations/openshift/vantuinpr.pdf)) by Chris Van Tuin, Red Hat
-* [Feb 2015](http://sddevops.org/events/219998142/) - Mitchell’s Devops Journey by Rajwinder Singh Makkar / Sony Koithara, Mitchell
+* [Feb 2015](http://sddevops.org/events/219998142/) - Mitchell’s Devops Journey by Rajwinder Singh Makkar, Sony Koithara, Mitchell
 * [Jan 2015](http://sddevops.org/events/218965694/) - [Overview of OneHealth's DevOps Journey](https://speakerdeck.com/svanzoest/stay-c-dot-a-l-dot-m-s-dot-a-local-companys-journey-into-devops) by Sander van Zoest, OneHealth
 
 ## 2014
