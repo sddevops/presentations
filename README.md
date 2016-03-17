@@ -2,6 +2,10 @@
 
 Speaker presentations from events.
 
+* [Mar 2016](http://sddevops.org/events/228833465/) 
+  - Jenkins 2.0 and Pipeline-as-Code ([PPT](http://www.slideshare.net/brianvdawson/sd-devops-meetup-jenkins-20-and-pipelineascode)) by Brian Dawson, CloudBees
+  - Exploring Quadrants of DevOps Maturity ([PPT](http://www.slideshare.net/brianvdawson/sd-devops-meetup-exploring-quadrants-of-devops-maturity)) by Brian Dawson, CloudBees
+
 * [Feb 2016](http://sddevops.org/events/222986448/) - Operating the open Core ([PDF](https://sddevops.github.io/presentations/operating-the-open-core/ooc.pdf)) by Ryan Uber, HashiCorp
 
 ## 2015
