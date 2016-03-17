@@ -2,7 +2,7 @@
 
 Speaker presentations from events.
 
-* [Mar 2016](http://sddevops.org/events/228833465/) 
+* [Mar 2016](http://sddevops.org/events/228833465/)
   - [Jenkins 2.0 and Pipeline-as-Code](http://www.slideshare.net/brianvdawson/sd-devops-meetup-jenkins-20-and-pipelineascode) by Brian Dawson, CloudBees
   - [Exploring Quadrants of DevOps Maturity](http://www.slideshare.net/brianvdawson/sd-devops-meetup-exploring-quadrants-of-devops-maturity) by Brian Dawson, CloudBees
 
