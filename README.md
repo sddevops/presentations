@@ -2,6 +2,8 @@
 
 Speaker presentations from events.
 
+* [Apr 2016](http://sddevops.org/events/229657853/) - Amazon Autoscaling - A Love Story by Brady Wetherington, BriteVerify
+* [Mar 2016](http://sddevops.org/events/228833465/) - Quadrants of DevOps Maturity. Jenkins and Pipeline-as-Code by Brian Dawson, Cloud Bees
 * [Feb 2016](http://sddevops.org/events/222986448/) - Operating the open Core ([PDF](https://sddevops.github.io/presentations/operating-the-open-core/ooc.pdf)) by Ryan Uber, HashiCorp
 
 ## 2015
@@ -25,7 +27,7 @@ Speaker presentations from events.
 ## 2014
 
 * [Nov 2014](http://sddevops.org/events/200372472/) - Build Artifact Management Roundtable
-* [Oct 2014](http://sddevops.org/events/190056522/) - Continous Delivery Roundtable
+* [Oct 2014](http://sddevops.org/events/190056522/) - Continuous Delivery Roundtable
 * [Sep 2014](http://sddevops.org/events/189958362/) - Software-defined Networking Roundtable
 * [Aug 2014](http://sddevops.org/events/189958462/) - Continuous Security Testing Roundtable
 * [Jul 2014](http://sddevops.org/events/189392812/) - Operating system–level virtualization Roundtable
