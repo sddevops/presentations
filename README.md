@@ -3,7 +3,9 @@
 Speaker presentations from events.
 
 * [Apr 2016](http://sddevops.org/events/229657853/) - Amazon Autoscaling - A Love Story by Brady Wetherington, BriteVerify
-* [Mar 2016](http://sddevops.org/events/228833465/) - Quadrants of DevOps Maturity. Jenkins and Pipeline-as-Code by Brian Dawson, Cloud Bees
+* [Mar 2016](http://sddevops.org/events/228833465/)
+  - [Jenkins 2.0 and Pipeline-as-Code](http://www.slideshare.net/brianvdawson/sd-devops-meetup-jenkins-20-and-pipelineascode) by Brian Dawson, CloudBees
+  - [Exploring Quadrants of DevOps Maturity](http://www.slideshare.net/brianvdawson/sd-devops-meetup-exploring-quadrants-of-devops-maturity) by Brian Dawson, CloudBees
 * [Feb 2016](http://sddevops.org/events/222986448/) - Operating the open Core ([PDF](https://sddevops.github.io/presentations/operating-the-open-core/ooc.pdf)) by Ryan Uber, HashiCorp
 
 ## 2015
