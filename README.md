@@ -6,7 +6,7 @@ Speaker presentations from events.
 * [Jul 2016](http://sddevops.org/events/231895281/) - Lightning Talks
   - [What's New in Kubernetes](https://chrishiestand.github.io/slides-devops-2017-07-20-kubernetes/) by Chris Hiestand, Zesty
   - Focus on key business metrics by Sander van Zoest, Voyant
-* [May 2016](http://sddevops.org/events/230325468/) - Automated Performance Testing & AWS Optimization Learnings
+* [May 2016](http://sddevops.org/events/230325468/)
   - [AWS Optimization Learnings](http://www.slideshare.net/KevinMcGoldrick/awsoptimizationlearnings) by Kevin McGoldrick, Intuit
   - [Automated Performance Testing](http://www.slideshare.net/AntonioHernandez209/automated-performance-testing-62239784) by Antonio Hernandez, Intuit
 * [Apr 2016](http://sddevops.org/events/229657853/) - Amazon Autoscaling - A Love Story by Brady Wetherington, BriteVerify
