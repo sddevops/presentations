@@ -3,6 +3,8 @@
 Speaker presentations from events.
 
 * [Aug 2016](http://sddevops.org/events/232648389/) - Container Orchestration with Rancher by Micheal Waltz, DemandBase
+  - [Container Orchestration with Rancher Presentation](https://docs.google.com/presentation/d/16th8oPq9sEvi7vc2T6evYNUl8PiEJFM30oudagcBT8E/edit?usp=sharing)
+  - [ruby-demo repository](https://github.com/ecliptik/ruby-demo)
 * [Jul 2016](http://sddevops.org/events/231895281/) - Lightning Talks
   - [What's New in Kubernetes](https://chrishiestand.github.io/slides-devops-2017-07-20-kubernetes/) by Chris Hiestand, Zesty
   - Focus on key business metrics by Sander van Zoest, Voyant
