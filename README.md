@@ -2,6 +2,8 @@
 
 Speaker presentations from events.
 
+* [Sep 2016](http://www.meetup.com/sddevops/events/233400891/) - [Mitchell's CI/CD Journey Continues](http://sddevops.github.io/presentations/mitchell/SanDiego_DevOps_Meetup_9212016.pdf) by Raj Sing Makkar, Richard Fong, Mitchell International
+
 * [Aug 2016](http://sddevops.org/events/232648389/) - Container Orchestration with Rancher by Micheal Waltz, DemandBase
   - [Container Orchestration with Rancher Presentation](https://docs.google.com/presentation/d/16th8oPq9sEvi7vc2T6evYNUl8PiEJFM30oudagcBT8E/edit?usp=sharing)
   - [ruby-demo repository](https://github.com/ecliptik/ruby-demo)
