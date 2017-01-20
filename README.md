@@ -2,6 +2,10 @@
 
 Speaker presentations from events.
 
+* [Jan 2017](https://www.meetup.com/sddevops/events/235136970/) - [What Is DevOps and Why Is It Important to Businesses?](http://sddevops.github.io/presentations/what-is-devops/20170118-Steve_Bogdan-What_is_DevOps_Presentation.pdf) by Steve Bogdan, FP Complete
+
+## 2016
+
 * [Sep 2016](http://www.meetup.com/sddevops/events/233400891/) - [Mitchell's CI/CD Journey Continues](http://sddevops.github.io/presentations/mitchell/SanDiego_DevOps_Meetup_9212016.pdf) by Raj Sing Makkar, Richard Fong, Mitchell International
 
 * [Aug 2016](http://sddevops.org/events/232648389/) - Container Orchestration with Rancher by Micheal Waltz, DemandBase
