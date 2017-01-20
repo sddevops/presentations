@@ -6,8 +6,10 @@ Speaker presentations from events.
 
 ## 2016
 
+* [Dec 2016](https://www.meetup.com/sddevops/events/235141382/) - End of Year Happy Hour
+* [Nov 2016](https://www.meetup.com/sddevops/events/233988842/) - Practitioner's Intro to Vault by Ryan Uber, HashiCorp
+* [Oct 2016](https://www.meetup.com/sddevops/events/233930720/) - Microsoft's Journey of Open Sourcing PowerShell by Joey Aiello, Microsoft and Ethan Brown, Puppet
 * [Sep 2016](http://www.meetup.com/sddevops/events/233400891/) - [Mitchell's CI/CD Journey Continues](http://sddevops.github.io/presentations/mitchell/SanDiego_DevOps_Meetup_9212016.pdf) by Raj Sing Makkar, Richard Fong, Mitchell International
-
 * [Aug 2016](http://sddevops.org/events/232648389/) - Container Orchestration with Rancher by Micheal Waltz, DemandBase
   - [Container Orchestration with Rancher Presentation](https://docs.google.com/presentation/d/16th8oPq9sEvi7vc2T6evYNUl8PiEJFM30oudagcBT8E/edit?usp=sharing)
   - [ruby-demo repository](https://github.com/ecliptik/ruby-demo)
@@ -22,6 +24,7 @@ Speaker presentations from events.
   - [Jenkins 2.0 and Pipeline-as-Code](http://www.slideshare.net/brianvdawson/sd-devops-meetup-jenkins-20-and-pipelineascode) by Brian Dawson, CloudBees
   - [Exploring Quadrants of DevOps Maturity](http://www.slideshare.net/brianvdawson/sd-devops-meetup-exploring-quadrants-of-devops-maturity) by Brian Dawson, CloudBees
 * [Feb 2016](http://sddevops.org/events/222986448/) - Operating the open Core ([PDF](https://sddevops.github.io/presentations/operating-the-open-core/ooc.pdf)) by Ryan Uber, HashiCorp
+* [Jan 2016](https://www.meetup.com/sddevops/events/227366324/) - DevOps Day LA @ SCaLE 14X
 
 ## 2015
 
