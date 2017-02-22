@@ -2,7 +2,7 @@
 
 Speaker presentations from events.
 
-* [Feb 2017](https://www.meetup.com/sddevops/events/235141651/) - Habitat by Andre Elizondo, Chef
+* [Feb 2017](https://www.meetup.com/sddevops/events/235141651/) - [Simplifying Containers with Habitat](https://speakerdeck.com/andrewelizondo/simplifying-containers-with-habitat-sd-devops) by Andre Elizondo, Chef
 * [Jan 2017](https://www.meetup.com/sddevops/events/235136970/) - [What Is DevOps and Why Is It Important to Businesses?](http://sddevops.github.io/presentations/what-is-devops/20170118-Steve_Bogdan-What_is_DevOps_Presentation.pdf) by Steve Bogdan, FP Complete
 
 ## 2016
