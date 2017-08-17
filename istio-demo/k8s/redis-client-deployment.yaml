@@ -1,0 +1,23 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: redis-client
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: redis-client
+
+  template:
+    metadata:
+      labels:
+        run: redis-client
+
+    spec:
+      containers:
+      -
+        name: redis-client
+        command: ["/bin/sh", "-c"]
+        args: ["apk --update --no-cache add redis && sleep 9999d"]
+        image: alpine

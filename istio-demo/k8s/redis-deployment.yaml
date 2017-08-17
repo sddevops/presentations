@@ -1,0 +1,93 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: redis-master
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis
+      role: master
+
+  template:
+    metadata:
+      labels:
+        app: redis
+        role: master
+        tier: backend
+
+    spec:
+
+      # initContainers:
+      #
+      #   - name: sysctl-buddy
+      #     image: alpine
+      #     securityContext:
+      #       privileged: true
+      #     command:
+      #       - /bin/sh
+      #     resources:
+      #       requests:
+      #         cpu: 1m
+      #         memory: 1Mi
+      #     args:
+      #       - '-c'
+      #       - 'sysctl -w net.core.somaxconn=8192 vm.overcommit_memory=1'
+      #     volumeMounts:
+      #       - mountPath: /sys
+      #         name: sys
+      #         readOnly: false
+
+      containers:
+
+      - name: redis
+        image: redis:4.0
+        command: ["redis-server", "--maxmemory", "100mb", "--maxmemory-policy", "volatile-ttl", "--tcp-keepalive", "60", "--appendonly", "yes", "--appendfsync", "everysec"]
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        ports:
+        - containerPort: 6379
+          name: redis
+        volumeMounts:
+        - name: data
+          mountPath: /data
+        # livenessProbe:
+        #   tcpSocket:
+        #     port: redis
+        #   initialDelaySeconds: 3
+        #   timeoutSeconds: 1
+        # readinessProbe:
+        #   tcpSocket:
+        #     port: redis
+        #   initialDelaySeconds: 10
+        #   timeoutSeconds: 1
+
+      volumes:
+      - name: data
+        hostPath:
+          path: /var/tmp/redis-master
+      - name: sys
+        hostPath:
+          path: /sys
+
+---
+
+kind: Service
+apiVersion: v1
+metadata:
+  name: redis-master
+
+spec:
+  ports:
+    -
+      name: redis-master
+      port: 6379
+      targetPort: redis
+      protocol: TCP
+
+  selector:
+    app: redis
+    role: master

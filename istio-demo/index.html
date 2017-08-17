@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Istio on Kubernetes, August 13, 2017</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/beige.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <section>
+            <h1>Istio On Kubernetes</h1>
+            <h2>August 16, 2017</h2>
+            <p>Chris Hiestand<br />
+              Software Engineer / Consultant<br />
+              twitter: <a href="https://twitter.com/dimmer">@dimmer</a><br />
+              github: <a href="https://github.com/chrishiestand">https://github.com/chrishiestand</a>
+            </p>
+
+            <aside class="notes">
+              <ul>
+                <li>Has anyone used istio?</li>
+                <li>How many people more or less know what kubernetes is?</li>
+                <li>How many people more or less know what istio is?</li>
+                <li>How many people use kubernetes at all?</li>
+                <li>How many people use kubernetes in production?</li>
+                <li>Of those how many on GCP?</li>
+                <li>Of those how many on AWS?</li>
+              </ul>
+            </aside>
+
+        </section>
+
+        <section style="padding: 0; margin: 0;">
+          <h2>What is Istio</h2>
+
+          <div><img src="media/istio-logo.png" title="istio" style="max-width: 5em; border: none;" /></div>
+
+          <ul>
+            <li>Open source, Golang</li>
+            <li>Released by Google, IBM, and Lyft</li>
+            <li>It's a Service mesh</li>
+
+            <aside class="notes">
+              <p>service mesh = layer of infrastructure between a service and the network. So it's like a common middleware that is outside of your codebase.</p>
+            </aside>
+
+          </ul>
+
+        </section>
+
+        <section style="padding: 0; margin: 0;">
+
+          <h2>Features</h2>
+          <ul>
+            <li>Automatic load balancing for HTTP, gRPC, and TCP traffic</li>
+            <li>Fine-grained control of traffic behavior with rich routing rules</li>
+            <li>Traffic encryption, service-to-service authentication and strong identity assertions</li>
+            <li>Fleet-wide policy enforcement</li>
+            <li>In-depth telemetry and reporting</li>
+          </ul>
+        </section>
+
+        <section style="padding: 0; margin: 0;">
+          <h2>But wait, there's more!</h2>
+
+          <div style="display: flex">
+
+              <div style="margin-right: 1em;">
+                <h3>Egress Features</h3>
+                <ul>
+                  <li>Service Authentication</li>
+                  <li>Load Balancing</li>
+                  <li>Retry and Circuit Breaker</li>
+                  <li>Fine-grained routing</li>
+                  <li>Telemetry</li>
+                  <li>Request Tracing</li>
+                  <li>Fault Injection</li>
+                </ul>
+              </div>
+
+              <div>
+              <h3>Ingress Features</h3>
+              <ul>
+                <li>Service Authentication</li>
+                <li>Authorization</li>
+                <li>Rate Limits</li>
+                <li>Load Shedding</li>
+                <li>Telemetry</li>
+                <li>Request Tracing</li>
+                <li>Fault Injection</li>
+              </ul>
+              </div>
+
+          </div>
+          <p style="font-size: .33em">source: <a href="https://istio.io/talks/istio_talk_gluecon_2017.pdf">https://istio.io/talks/istio_talk_gluecon_2017.pdf</a></p>
+
+          <aside class="notes">
+            <p>Next I'm going to describe kubernetes for the uninitiated. Can anyone define what a kubernetes pod is?</p>
+          </aside>
+
+        </section>
+
+        <section style="padding: 0; margin: 0;">
+            <figure>
+                <figcaption>Example K8s Pod</figcaption>
+                <img src="media/pod.svg" title="kubernetes pod" alt="kubernetes pod" style="margin: 0; border: none;"/>
+            </figure>
+
+            <aside class="notes">
+              <p>Can anyone define what a kubernetes node is?</p>
+            </aside>
+
+        </section>
+
+        <section style="padding: 0; margin: 0;">
+            <figure>
+                <figcaption>Example K8s Node</figcaption>
+                <img src="media/node.svg" title="kubernetes pod" alt="kubernetes pod" style="margin: 0; width: 70%;"/>
+            </figure>
+        </section>
+
+        <section style="padding: 0; margin: 0;">
+            <figure>
+                <figcaption>Example K8s Cluster</figcaption>
+                <img src="media/cluster.svg" title="kubernetes cluster topology" alt="kubernetes cluster topology" style="margin: 0;"/>
+            </figure>
+            <aside class="notes">By default, any pod can communicate with any other pod. In practice, a pod usually only talks to a single pod for any given service.</aside>
+        </section>
+
+        <section style="padding: 0; margin: 0;">
+            <figure>
+                <figcaption>Sidecar Pattern (in a pod)</figcaption>
+                <img src="media/sidecar.png" title="sidecar" alt="sidecar" style="margin: 0; border: none;"/>
+            </figure>
+            <p style="font-size: .33em;">source: <a href="http://blog.kubernetes.io/2015/06/the-distributed-system-toolkit-patterns.html">http://blog.kubernetes.io/2015/06/the-distributed-system-toolkit-patterns.html</a></p>
+
+        </section>
+
+        <section style="padding: 0; margin: 0;">
+
+            <figure>
+                <figcaption>Basic Istio Routing<sup>*</sup></figcaption>
+                <img src="media/envoy-sidecar.svg" title="basic istio routing" alt="basic istio routing" style="margin: 0; border: none;"/>
+                <figcaption style="font-size: .33em"><sup>*</sup>Not always the case</figcaption>
+            </figure>
+
+            <aside class="notes">
+              <p>
+                implementation detail: IPTables is configured by a kubernetes init container
+
+                In 0.1 egress is only supported for the HTTP protocol
+                A service is still available directly from (non-istio) containers in the cluster
+
+              </p>
+            </aside>
+
+        </section>
+
+        <section style="padding: 0; margin: 0;">
+            <figure>
+                <figcaption>Istio Architecture</figcaption>
+                <img src="media/istio-arch.svg" title="Istio topology" alt="Istio topology" style="margin: 0;"/>
+            </figure>
+            <p style="font-size: .33em;">source: <a href="https://istio.io/docs/concepts/what-is-istio/overview.html">https://istio.io/docs/concepts/what-is-istio/overview.html</a></p>
+            <aside class="notes">
+
+              <p>two planes: data and control</p>
+
+              <p>The data plane is composed of a set of intelligent proxies (Envoy) deployed as sidecars that mediate and control all network communication between microservices.</p>
+
+              <p>The control plane is responsible for managing and configuring proxies to route traffic, as well as enforcing policies at runtime.</p>
+
+              <p>Mixer is responsible for enforcing access control and usage policies across the service mesh and collecting telemetry data from the Envoy proxy and other services.</p>
+
+              <p>Pilot is responsible for collecting and validating configuration and propagating it to the various Istio components.</p>
+
+              <p>Istio-Auth provides strong service-to-service and end-user authentication using mutual TLS, with built-in identity and credential management</p>
+            </aside>
+        </section>
+
+        <section style="padding: 0; margin: 0;">
+          <figure>
+              <figcaption>Demo Architecture</figcaption>
+              <img src="media/istio-demo-architecture.svg" title="Istio demo arch" alt="Istio demo arch" style="margin: 0;"/>
+          </figure>
+
+            <aside class="notes">
+              <h3>benefits of sidecar</h3>
+              <ul>
+                <li>Programming language independent</li>
+                <li>DRY</li>
+              </ul>
+            </aside>
+            <p style="font-size: .33em;">source: <a href="https://istio.io/docs/samples/bookinfo.html">https://istio.io/docs/samples/bookinfo.html</a>
+        </section>
+
+        <section style="padding: 0; margin: 0;">
+          <h1><span style="text-decoration: line-through;">Peanut Butter Jelly</span>Demo time!</h1>
+        </section>
+
+        <section style="padding: 0; margin: 0;">
+          <h3>Some Early Adoption (0.1) Limitations<sup>*</sup></h3>
+          <ul>
+            <li>Egress service only supports HTTP(S) requests</li>
+            <li>Istio-Auth (mTLS) only supports HTTP requests</li>
+            <li>Request Tracing only supports HTTP requests?</li>
+          </ul>
+          <p style="font-size: .33em"><sup>*</sup>Not a complete list</figcaption>
+
+            <aside class="notes">
+            </aside>
+        </section>
+
+        <section style="padding: 0; margin: 0;">
+          <h3>0.2 Roadmap</h3>
+          <ul style="font-size: .75em;">
+            <li>TCP telemetry collection and policy enforcement.</li>
+            <li>Support for VMs joining an Istio Mesh.</li>
+            <li>Fully-automated injection of Envoy proxies into Kubernetes pods.</li>
+            <li>Standard extension points for addons and plugins.</li>
+            <li>Expanded authorization with callouts to external services.</li>
+            <li>Mixer request tracing with Zipkin.</li>
+            <li>Additional logging and analysis plugins.</li>
+            <li>Cluster-wide rate limiting.</li>
+            <li>Basic API management features.</li>
+            <li>Configuration rollout and management.</li>
+            <li>Configuration and policy enforcement APIs.</li>
+            <li>Improved system stability and performance.</li>
+          </ul>
+
+          <p style="font-size: .33em;">source: <a href="https://istio.io/docs/reference/release-roadmap.html">https://istio.io/docs/reference/release-roadmap.html</a>
+          </p>
+
+            <aside class="notes">"Fully-automated injection of Envoy proxies into Kubernetes pods" via admission controller
+            </aside>
+        </section>
+
+        <section style="padding: 0; margin: 0;">
+          <h1>Thank you!</h1>
+        </section>
+
+        <!-- <section style="padding: 0; margin: 0;">
+
+          <h3>TODO</h3>
+
+          <aside class="notes">
+            tcpdump dst port 6379 -vvvvvv |grep RESP
+
+            kcm exec -it $(kcm get pod |grep --color=none redis-master | cut -d' ' -f1) -c snooper -- /bin/sh -c "tcpdump port 6379 -vvvvvv |grep RESP"
+
+            kcm apply -f <(istioctl kube-inject -f redis-client-deployment.yaml --includeIPRanges=10.0.0.0/8)
+
+
+            kcm exec -it $(kcm get pod |grep --color=none redis-client | cut -d' ' -f1) -- /bin/sh -c "redis-cli -h redis-master get foo"
+
+            kcm exec -it $(kcm get pod |grep --color=none snooper | tail -n1 | cut -d' ' -f1) -c snooper -- /bin/sh -c "tcpdump -i any -vvvvvv dst port 6379 |grep ' RESP '"
+
+            kcm exec -it $(kcm get pod |grep --color=none snooper | tail -n1 | cut -d' ' -f1) -c snooper -- /bin/sh -c "tcpdump -i docker0 -vvvvvv dst port 6379 |grep ' RESP '"
+          </aside>
+        </section> -->
+
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+
+        history: true,
+        center: false,
+
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>

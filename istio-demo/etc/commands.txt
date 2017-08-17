@@ -1,0 +1,72 @@
+# setup bookinfo example
+kubectl apply -f <(istioctl kube-inject -f samples/apps/bookinfo/bookinfo.yaml)
+
+#scale down replicas of new service
+kubectl scale --replicas=0 deployment reviews-v3
+kubectl scale --replicas=0 deployment reviews-v2
+
+# Browse the product page, show grafana, dotviz, zipkin
+
+#scale up reviews v2
+kubectl scale --replicas=1 deployment reviews-v2
+
+# Browse the product page, show v1 and v2
+
+
+# setup istio route reviews
+istioctl create -f samples/apps/bookinfo/route-rule-all-v1.yaml
+
+#route a specific user to reviews v2
+istioctl create -f samples/apps/bookinfo/route-rule-reviews-test-v2.yaml
+
+#login as chris
+#login as jason
+
+
+# add fault injection to ratings
+istioctl create -f samples/apps/bookinfo/destination-ratings-test-delay.yaml
+
+#The reason that the entire reviews service has failed is because our BookInfo application has a bug. The timeout between the productpage and reviews service is less (3s + 1 retry = 6s total) than the timeout between the reviews and ratings service (10s). These kinds of bugs can occur in typical enterprise applications where different teams develop different microservices independently. Istio’s fault injection rules help you identify such anomalies without impacting end users.
+
+# move 50% of traffic from reviews:v1 to reviews:v3
+istioctl replace -f samples/apps/bookinfo/route-rule-reviews-50-v3.yaml
+
+# note that nothing has changed since we're still "jason" and jason does not get to see v3 yet
+# log out and show and we're still seeing only v1 because we haven't deployed v3 yet
+
+# deploy reviews v3
+kubectl scale --replicas=1 deployment reviews-v3
+
+# refresh page, note that it takes about 16 refreshes to switch between versions
+
+# auto-generate some traffic, show graphviz
+wrk -c10 -d60s -t1 http://162.222.183.229/productpage
+
+# route all traffic to reviews v3
+istioctl replace -f samples/apps/bookinfo/route-rule-reviews-v3.yaml
+
+
+#delete tests
+istioctl delete route-rule reviews-test-v2
+istioctl delete route-rule ratings-test-delay
+
+
+# rate limiting
+
+#add rate limit for ratings service
+
+istioctl mixer rule create global ratings.default.svc.cluster.local -f samples/apps/bookinfo/ratelimit.yaml
+
+watch -n1 curl -I http://162.222.183.229/productpage
+
+# show conditional rate limit at samples/apps/bookinfo/ratelimit-conditional.yaml
+
+# rate limited service on limit exceeded returns HTTP 429
+
+
+
+#CLEANUP
+kubectl delete pod -l app=prometheus
+kubectl delete pod -l app=servicegraph
+kubectl delete pod -l app=zipkin
+istioctl mixer rule create global ratings.default.svc.cluster.local -f samples/apps/bookinfo/mixer-rule-empty-rule.yaml

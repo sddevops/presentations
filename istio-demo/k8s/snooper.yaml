@@ -1,0 +1,32 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: snooper
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: snooper
+
+  template:
+    metadata:
+      labels:
+        app: snooper
+
+    spec:
+
+      hostNetwork: true
+
+      containers:
+
+      - name: snooper
+        image: alpine
+        command: ["/bin/sh", "-c"]
+        args: ["apk --update --no-cache add bash tcpdump && sleep 9999d"]
+        securityContext:
+          privileged: true
+        resources:
+          requests:
+            cpu: 10m
+            memory: 1Mi
