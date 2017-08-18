@@ -7,6 +7,7 @@ Speaker presentations from events.
 * [Jun 2017](https://www.meetup.com/sddevops/events/240075773/) - What Hiring Managers Are Looking For in DevOps Engineers by Jon Barton, TEKsystems
 * [May 2017](https://www.meetup.com/sddevops/events/238997848/) - [Shard your Shelf](http://sddevops.github.io/presentations/shard-your-shelf/shard-your-shelf.pdf) ([Notes / source](http://sddevops.github.io/presentations/shard-your-shelf/shard-your-shelf.rkt)) by [Andrew Gwozdziewycz](https://github.com/apg), Heroku
 * [Apr 2017](https://www.meetup.com/sddevops/events/237868096/) - [Automatic Provisioning of Consult & Vault](https://www.slideshare.net/misham/automatic-provisioning-of-consul-vault) by Misha Manulis, OSG Corp
+* [Mar 2017](https://www.meetup.com/sddevops/events/235146503/) - SCaLE 15X / 2017 DevOps Day LA
 * [Feb 2017](https://www.meetup.com/sddevops/events/235141651/) - [Simplifying Containers with Habitat](https://speakerdeck.com/andrewelizondo/simplifying-containers-with-habitat-sd-devops) by Andre Elizondo, Chef
 * [Jan 2017](https://www.meetup.com/sddevops/events/235136970/) - [What Is DevOps and Why Is It Important to Businesses?](http://sddevops.github.io/presentations/what-is-devops/20170118-Steve_Bogdan-What_is_DevOps_Presentation.pdf) by Steve Bogdan, FP Complete
 
