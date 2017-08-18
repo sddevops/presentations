@@ -2,6 +2,9 @@
 
 Speaker presentations from events.
 
+* [Aug 2017](https://www.meetup.com/sddevops/events/241892500/) - [Istio Demo](http://sddevops.github.io/presentations/istio-demo/) by Chris Hiestand 
+* [Jul 2017](https://www.meetup.com/sddevops/events/240076147/) - Microservices Roundtable Discussion
+* [Jun 2017](https://www.meetup.com/sddevops/events/240075773/) - What Hiring Managers Are Looking For in DevOps Engineers by Jon Barton, TEKsystems
 * [May 2017](https://www.meetup.com/sddevops/events/238997848/) - [Shard your Shelf](http://sddevops.github.io/presentations/shard-your-shelf/shard-your-shelf.pdf) ([Notes / source](http://sddevops.github.io/presentations/shard-your-shelf/shard-your-shelf.rkt)) by [Andrew Gwozdziewycz](https://github.com/apg), Heroku
 * [Apr 2017](https://www.meetup.com/sddevops/events/237868096/) - [Automatic Provisioning of Consult & Vault](https://www.slideshare.net/misham/automatic-provisioning-of-consul-vault) by Misha Manulis, OSG Corp
 * [Feb 2017](https://www.meetup.com/sddevops/events/235141651/) - [Simplifying Containers with Habitat](https://speakerdeck.com/andrewelizondo/simplifying-containers-with-habitat-sd-devops) by Andre Elizondo, Chef
