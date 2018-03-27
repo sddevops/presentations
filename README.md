@@ -2,6 +2,13 @@
 
 Speaker presentations from events.
 
+* [Mar 2018](https://www.meetup.com/sddevops/events/qbhmwhyxfbcc/) - [Intro to Easy Deployments with NixOps](https://sddevops.github.io/presentations/nixops/nixops.pdf) by Ben Sima
+* [Jan 2018](https://www.meetup.com/sddevops/events/qbhmwhyxcbwb/) - What is DevOps? Roundtable
+
+## 2017
+
+* [Nov 2017](https://www.meetup.com/sddevops/events/243748055/) - Monitoring Roundtable
+* [Oct 2017](https://www.meetup.com/sddevops/events/243829914/) - Serverless Roundtable
 * [Aug 2017](https://www.meetup.com/sddevops/events/241892500/) - [Istio Demo](http://sddevops.github.io/presentations/istio-demo/) by Chris Hiestand 
 * [Jul 2017](https://www.meetup.com/sddevops/events/240076147/) - Microservices Roundtable Discussion
 * [Jun 2017](https://www.meetup.com/sddevops/events/240075773/) - What Hiring Managers Are Looking For in DevOps Engineers by Jon Barton, TEKsystems
