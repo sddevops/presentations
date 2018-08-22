@@ -3,9 +3,11 @@
 Speaker presentations from events.
 
 * [Aug 2018](https://www.meetup.com/sddevops/events/qbhmwhyxlbtb/) - [Multi-account AWS Architecture with Terraform](https://sddevops.github.io/presentations/multi-account-aws-architecture-with-terraform/multi-account-aws-architecture-with-terraform.pdf) by Zachary Wilson
+* [July 2018](https://www.meetup.com/sddevops/events/qbhmwhyxkbxb/) - I put Kubernetes in production and guess what happened next by Chris McEniry
 * [Jun 2018](https://www.meetup.com/sddevops/events/qbhmwhyxjbbc/) - [Incidents & Accidents](https://sddevops.github.io/presentations/incidents-and-accidents/incidents-and-accidents-201806.pdf) by Matty Stratton
 * [May 2018](https://www.meetup.com/sddevops/events/qbhmwhyxhbvb/) - AWS Step functions ( or similar offerings) Roundtable Discussion
 * [Mar 2018](https://www.meetup.com/sddevops/events/qbhmwhyxfbcc/) - [Intro to Easy Deployments with NixOps](https://sddevops.github.io/presentations/nixops/nixops.pdf) by Ben Sima
+* [Mar 2018](https://www.meetup.com/sddevops/events/246938984/) - SCaLE 16X / 2018 DevOps Day LA
 * [Jan 2018](https://www.meetup.com/sddevops/events/qbhmwhyxcbwb/) - What is DevOps? Roundtable
 
 ## 2017
