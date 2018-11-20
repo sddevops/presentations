@@ -2,6 +2,9 @@
 
 Speaker presentations from events.
 
+* [Nov 2018](https://www.meetup.com/sddevops/events/qbhmwhyxpbcc/) - Securing Microservices with HashiCorp Stack
+* [Oct 2018](https://www.meetup.com/sddevops/events/qbhmwhyxnbwb/) - Mitchell international CICD Journey
+* [Sep 2018](https://www.meetup.com/sddevops/events/qbhmwhyxmbzb/) - [Terraform, Collaboration and DevOps](https://speakerdeck.com/lkysow/terraform-collaboration-and-devops-san-diego-meetup) by Luke Kysow, Atlantis Maintainer
 * [Aug 2018](https://www.meetup.com/sddevops/events/qbhmwhyxlbtb/) - [Multi-account AWS Architecture with Terraform](https://sddevops.github.io/presentations/multi-account-aws-architecture-with-terraform/multi-account-aws-architecture-with-terraform.pdf) by Zachary Wilson
 * [July 2018](https://www.meetup.com/sddevops/events/qbhmwhyxkbxb/) - I put Kubernetes in production and guess what happened next by Chris McEniry
 * [Jun 2018](https://www.meetup.com/sddevops/events/qbhmwhyxjbbc/) - [Incidents & Accidents](https://sddevops.github.io/presentations/incidents-and-accidents/incidents-and-accidents-201806.pdf) by Matty Stratton
