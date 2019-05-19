@@ -3,15 +3,15 @@
 Speaker presentations from events.
 
 * [May 2019](https://www.meetup.com/sddevops/events/qbhmwhyzhbtb/) - Improve Code Quality with Peer Review and Static Analysis by John Lin
-* [Apr 2019](https://www.meetup.com/sddevops/events/qbhmwhyzgbwb/) - Job Titles and hiring Riddles roundtable
+* [Apr 2019](https://www.meetup.com/sddevops/events/qbhmwhyzgbwb/) - Job Titles and hiring Riddles Roundtable Discussion
 * [Mar 2019](https://www.meetup.com/sddevops/events/qbhmwhyzfbbc/) - The State of DevOps Report 2019 by  Jonathan Barton
 * [Feb 2019](https://www.meetup.com/sddevops/events/qbhmwhyzdbbc/) - [Evolution of Infrastructure as Code - Weedmaps DevOps Journey](https://github.com/rocpatel/weedmaps-devops-journey) by Rakesh Patel
 * [Jan 2019](https://www.meetup.com/sddevops/events/qbhmwhyzcbvb/) - [Meaningful Mentoring Moments](https://treyhunner.com/mentoring/) by Trey Hunner
 
 ## 2018
 
-* [Nov 2018](https://www.meetup.com/sddevops/events/qbhmwhyxpbcc/) - Securing Microservices with HashiCorp Stack [ppt](https://sddevops.github.io/presentations/mitchellNov2018SdDevops/SecuringMicroservicesWithHashiCorpStack.pptx)
-* [Oct 2018](https://www.meetup.com/sddevops/events/qbhmwhyxnbwb/) - Mitchell international CICD Journey
+* [Nov 2018](https://www.meetup.com/sddevops/events/qbhmwhyxpbcc/) - Securing Microservices with HashiCorp Stack ([ppt](https://sddevops.github.io/presentations/mitchellNov2018SdDevops/SecuringMicroservicesWithHashiCorpStack.pptx)) by Richard Heath
+* [Oct 2018](https://www.meetup.com/sddevops/events/qbhmwhyxnbwb/) - Mitchell international CICD Journey by Rajwinder Makkar and Richard Fong
 * [Sep 2018](https://www.meetup.com/sddevops/events/qbhmwhyxmbzb/) - [Terraform, Collaboration and DevOps](https://speakerdeck.com/lkysow/terraform-collaboration-and-devops-san-diego-meetup) by Luke Kysow, Atlantis Maintainer
 * [Aug 2018](https://www.meetup.com/sddevops/events/qbhmwhyxlbtb/) - [Multi-account AWS Architecture with Terraform](https://sddevops.github.io/presentations/multi-account-aws-architecture-with-terraform/multi-account-aws-architecture-with-terraform.pdf) by Zachary Wilson
 * [July 2018](https://www.meetup.com/sddevops/events/qbhmwhyxkbxb/) - I put Kubernetes in production and guess what happened next by Chris McEniry
